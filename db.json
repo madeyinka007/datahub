@@ -1,0 +1,70 @@
+{
+  "client": [
+    {
+      "id": "1c21",
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "plan": ""
+    },
+    {
+      "id": "6dd1",
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "plan": ""
+    },
+    {
+      "id": "16dd",
+      "firstname": "Musty",
+      "lastname": "Whiz",
+      "email": "mustytryst@gmail.com",
+      "plan": "Basic Plan"
+    },
+    {
+      "id": "9f97",
+      "firstname": "Jimmy ",
+      "lastname": "Carrey",
+      "email": "jimjim@gmail.com",
+      "plan": "Standard Plan"
+    },
+    {
+      "id": "661a",
+      "firstname": "Hameed",
+      "lastname": "Osho",
+      "email": "hameednow@hotmail.com",
+      "plan": "Standard Plan"
+    },
+    {
+      "id": "274f"
+    }
+  ],
+  "agent": [
+    {
+      "id": "464c",
+      "firstname": "Yinka",
+      "lastname": "Johnson",
+      "email": "mustytryst@gmail.com",
+      "phone": "07059301769"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "39d8",
+      "firstname": "Musty",
+      "lastname": "Whizzy",
+      "email": "mustytryst@gmail.com",
+      "phone": "2347065304335",
+      "service": "digital-marketing"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "95bf",
+      "name": "Musty Whizzy",
+      "email": "mustytryst@gmail.com",
+      "subject": "ALL IS WELL",
+      "msg": "Thank you for all that you do."
+    }
+  ]
+}
