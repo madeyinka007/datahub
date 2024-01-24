@@ -1,0 +1,226 @@
+.modal-bg {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index:1000;
+}
+
+.modal-container {
+    max-height: 90vh;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 30px 0 rgba(#000, 0.25);
+    @media (max-width: 600px) {width: 90%;}
+    z-index:1000;
+}
+
+.modal-container-header {
+	padding: 16px 32px;
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.modal-container-title {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	line-height: 1;
+	font-weight: 700;
+}
+
+.modal-container-body {
+	padding: 24px 32px 51px;
+	overflow-y: auto;
+}
+
+.icon-button {
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: 0.15s ease;
+	bi {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+.success-pop {
+	width:100%;
+	padding:20px;
+	text-align:center;
+}
+.success-pop .home-btn{
+	margin-top:25px;
+}
+.success-pop .home-btn .btn{
+	display: inline-block;
+    background-color: #75dab4;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #272727;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 180px;
+    padding: 15px 30px;
+    border: 2px solid #75dab4;
+    -webkit-transition: all .5s ease-out 0s;
+    transition: all .5s ease-out 0s;
+}
+
+#check-group {
+    animation: 0.32s ease-in-out 1.03s check-group;
+    transform-origin: center;
+}
+
+#check-group #check {
+    animation: 0.34s cubic-bezier(0.65, 0, 1, 1) 0.8s forwards check;
+    stroke-dasharray: 0, 75px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#check-group #outline {
+    animation: 0.38s ease-in outline;
+    transform: rotate(0deg);
+    transform-origin: center;
+}
+
+#check-group #white-circle {
+    animation: 0.35s ease-in 0.35s forwards circle;
+    transform: none;
+    transform-origin: center;
+}
+
+@keyframes outline {
+  from {
+    stroke-dasharray: 0, 345.576px;
+  }
+  to {
+    stroke-dasharray: 345.576px, 345.576px;
+  }
+}
+@keyframes circle {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes check {
+  from {
+    stroke-dasharray: 0, 75px;
+  }
+  to {
+    stroke-dasharray: 75px, 75px;
+  }
+}
+@keyframes check-group {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.09);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.agent-sec {
+  position: relative;
+  z-index: 1000;
+}
+
+.agent-content {
+  position: relative;
+  padding: 60px 80px;
+  border-radius: 10px;
+  background-color: #1a191d;
+  background-image: url(https://placehold.co/1170x590);
+  background-size: cover;
+  background-position: center center;
+}
+
+.agent-form {
+  /* margin: 0; */
+  padding: 70px 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.agent-form form input {
+  height: 60px;
+  width: 100%;
+  margin:5px;
+  background-color: #0f0f11;
+  border-radius: 10px;
+  border: none;
+  padding: 0 20px;
+  color: #e4e4e4;
+}
+
+.agent-form form input[type=submit] {
+  max-width: 140px;
+  background-color: #75dab4;
+  border-radius: 10px;
+  position: relative;
+  height: 50px;
+  top: 5px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: all .5s ease-out 0s;
+  transition: all .5s ease-out 0s;
+}
+
+.error {
+  margin:10px;
+  font-size:12px;
+  color:tomato
+}
+
+.success {
+  margin: 10px;
+  font-size: 12px;
+  color:lime;
+}
+
+.questions-form form select {
+  width:100%;
+  height:70%;
+  background-color: #f0f0f0;
+  border:#ffdead;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  font-size: 14px;
+  color:#272727;
+}
+
+.questions-form form select option {
+  padding:10px;
+}
