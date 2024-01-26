@@ -30,7 +30,7 @@ import { Partners, Services, Team, Testimonies } from '../constants'
                         {Services.map((service, index) => {
                             return (
                                 <SwiperSlide key={index}>
-                                    <div className="swiper-slide wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                    <div className="swiper-slide wow animate" data-wow-delay="200ms" data-wow-duration="1500ms">
                                         <div className="single-service">
                                             <span>0{index + 1}</span>
                                             <div className="icon">
