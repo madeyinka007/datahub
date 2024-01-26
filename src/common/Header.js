@@ -3,22 +3,23 @@ import { GetQuoteModal } from "../components/Modal"
 import { Link } from "react-router-dom"
 import { useState } from "react"
 
-export default function() {
+export default function Header() {
     const [open, setIsOpen] = useState(false)
     const { t } = useTranslation()
+    const [navState, setNavState] = useState(false)
 
     return (
         <header className="header-area position_top">
             <div className="site-logo">
                 <div className="logo">
-                    <a href="/"><img src="./../assets/img/logo.svg" alt="logo" /></a>
+                    <Link to="/"><img src="./../assets/img/logo.svg" alt="logo" /></Link>
                 </div>
             </div>
             <div className="main-menu">
-                <nav className="main-nav">
+                <nav className={navState ? "main-nav slidenav":"main-nav"}>
                     <div className="mobile-menu-logo">
                         <Link to="/"><img src="assets/img/logo-dark.svg" alt="logo" /></Link>
-                        <div className="remove">
+                        <div className="remove" onClick={() => setNavState(false)}>
                             <i className="bi bi-plus-lg"></i>
                         </div>
                     </div>
@@ -57,7 +58,7 @@ export default function() {
                     </div>
                 </div>
                 <div className="mobile-menu">
-                    <Link to="#" onClick={e => e.preventDefault()} className="cross-btn">
+                    <Link onClick={() => {setNavState(!navState)}} className="cross-btn">
                         <span className="cross-top"></span>
                         <span className="cross-middle"></span>
                         <span className="cross-bottom"></span>
