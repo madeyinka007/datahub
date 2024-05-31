@@ -1,18 +1,19 @@
 export const Services = [
     {
-        name:'Web Design',
+        name:'Web Development',
         slug:'web-design',
         icon:'service-icon-1',
-        desc:'We design and develop industry leading websites that attracts visitors.'
+        desc:'We design and develop industry leading websites that attracts visitors.',
+        content:''
     },
     {
-        name:'UI/UX Design',
+        name:'Software Development',
         slug:'uiux-design',
         icon:'service-icon-2',
         desc:'Trust and afinity can only come with brilliant, strategic design. '
     },
     {
-        name:'App Development',
+        name:'Brand Management',
         slug:'app-development',
         icon:'service-icon-3',
         desc:'Leveraging on the latest development tools ensuring rapid progress.'
@@ -22,12 +23,6 @@ export const Services = [
         slug:'digital-marketing',
         icon:'service-icon-4',
         desc:'Data-Driven Digital Marketing With Stunning Results.'
-    },
-    {
-        name:'Brand Management',
-        slug:'brand-management',
-        icon:'service-icon-5',
-        desc:'We discover capacities that will drive seamless operations'
     }
 ]
 

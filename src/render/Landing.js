@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next"
 import { ProjectCard } from "../components/cards"
 import { PartnerCard, ServiceCard, TeamCard, TestimonialCard } from "../components/swiper"
 import { Link } from "react-router-dom"
-import { Modal, PlanSelect, PlanSelectModal } from "../components/Modal"
+import { PlanSelectModal } from "../components/Modal"
 import { useState } from "react"
 import { useThemeContext } from "../context/ThemeContext"
 
@@ -33,8 +33,8 @@ function Landing(){
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="hero-content">
-                            <h1>Creative & Minimal<span>It Agency.</span></h1>
-                            <p>Curabitur sed facilisis erat. Vestibulum pharetra eros eget fringilla porttitor. ol Duis a orci nunc. Suspendisse ac convallis sapien, quis commodo libero. Donec nec dui luctus, pellentesque lacus sed, mollis leo.</p>
+                            <h1>Bring your brand<span>to spotlight.</span></h1>
+                            <p>Partner with us to create a powerful online presence that engages your audience and drives growth. Let's transform your vision into a digital masterpiece.</p>
                             <div className="buttons">
                                 <div className="cmn-btn">
                                     <div className="line-1"></div>
@@ -60,7 +60,8 @@ function Landing(){
                 <div className="sec-title">
                     <span>{t('Offering')}</span>
                     <h2>Services</h2>
-                    <p>We are a full stack software development agency that can help your business from branding through marketing through development to launch.</p>
+                    <p>Our comprehensive range of services is designed to meet the diverse needs of businesses in the digital age. From stunning website designs to strategic marketing campaigns, we are your trusted partner in achieving online success.</p>
+                    {/* <p>We are a full stack software development agency that can help your business from branding through marketing through development to launch.</p> */}
                 </div>
             </div>
             <ServiceCard />
@@ -71,19 +72,28 @@ function Landing(){
             <div className="row">
                 <div className="col-lg-6 or-2 wow animate fadeIn" data-wow-delay="200ms" data-wow-duration="1500ms">
                     <div className="sec-title layout2">
-                        <span>Get To Know</span>
+                        <span>Get To Know Us</span>
                         <h2>About Us</h2>
                     </div>
-                    <div className="about-left">
-                        <h3>All your digital needs under one roof.</h3>
-                        <p>Our digital solutions support businesses in the realignment of, or new investment in technology, business processes and models to become more relevant to consumers and drive long-term growth.</p>
-                        <div className="company-since">
+                    <div className="about-left mb-3">
+                        <h3>Let's Create Something Amazing Together.</h3>
+                        <p>As a full-service digital agency, we are dedicated to helping our clients navigate the dynamic digital landscape with cutting-edge solutions and strategic insights that drives long-term growth.</p>
+                        {/* <p>Our digital solutions support businesses in the realignment of, or new investment in technology, business processes and models to become more relevant to consumers and drive long-term growth.</p> */}
+                        
+                        {/* <div className="company-since">
                             <div className="company-logo">
                                 <img src="assets/img/logo-dark.svg" alt="logo-dark" />
                             </div>
                             <strong>#1</strong>
                             <h4>Best Creative IT Agency And Solutions <span>Since 2005.</span></h4>
-                        </div>
+                        </div> */}
+                    </div>
+                    <div className="about-left mb-3">
+                        <p>Our strategy is centered around understanding your business, your goals, and your audience. We believe that a successful digital presence is built on a solid foundation of research, planning, and execution. </p>
+                        {/* <p>From designing your overall digital strategy, to Digital Communication, to implementing game-changers like Cloud, AI, Mobility and Digital Engineering, we guide you through the jungle of digital possibilities with a structured and result-oriented approach.</p> */}
+                    </div>
+                    <div class="read-btn">
+                        <Link to={"/about-us"}>Learn More</Link>
                     </div>
                 </div>
                 <div className="col-lg-6 or-1 wow animate fadeIn" data-wow-delay="200ms" data-wow-duration="1500ms">
