@@ -45,9 +45,11 @@ export default function(){
                             <div className="why-choose-right">
                                 <div className="sec-title layout2">
                                     <span>Get To Know Us</span>
-                                    <h3>All your digital needs under one roof.</h3>
+                                    <h4>Let's Create Something Amazing Together.</h4>
                                 </div>
-                                <p style={{paddingBottom:'20px'}}>Our digital solutions support businesses in the realignment of, or new investment in technology, business processes and models to become more relevant to consumers and drive long-term growth.</p>
+                                <p className="mb-3">As a full-service digital agency, we are dedicated to helping our clients navigate the dynamic digital landscape with cutting-edge solutions and strategic insights that drives long-term growth.</p>
+                                {/* <p >Our digital solutions support businesses in the realignment of, or new investment in technology, business processes and models to become more relevant to consumers and drive long-term growth.</p> */}
+                                <p className="mb-3">Our strategy is centered around understanding your business, your goals, and your audience. We believe that a successful digital presence is built on a solid foundation of research, planning, and execution.</p>
                                 <p>From designing your overall digital strategy, to Digital Communication, to implementing game-changers like Cloud, AI, Mobility and Digital Engineering, we guide you through the jungle of digital possibilities with a structured and result-oriented approach.</p>
                             </div>
                         </div>
@@ -63,11 +65,11 @@ export default function(){
                                 <h3>Strategic. Holistic. Impactful.</h3>
                             </div>
                             <div className="about-left">
-                                <p style={{paddingBottom:'20px'}}>Today’s technologies are reshaping the world, creating both enormous growth opportunities and essential threats at the same time.</p>
+                                <p className="mb-3">Our experienced team of experts is dedicated to delivering customized, innovative solutions that drive tangible results. We understand that every business is unique, which is why we take the time to develop personalized strategies tailored to your specific goals and challenges. </p>
                                
-                                <p style={{paddingBottom:'20px'}}>Utilizing the very best of technology, creativity and data, we help organizations evolve quickly to seize the opportunities while effectively mitigating the risks that this reality presents.</p>
+                                <p className="mb-3">Our client-centric approach ensures that your goals are our top priority. We take the time to understand your unique needs and develop tailored strategies that align with your vision. Open communication, transparency, and collaboration are the cornerstones of our process, ensuring that you’re always informed and involved.</p>
                                 
-                                <p>Our experts can guide and support you in the integration of digital technology into all areas of your business to achieve greater productivity,enhanced security and, unassailable competitive edge.</p>
+                                {/* <p>Our experts can guide and support you in the integration of digital technology into all areas of your business to achieve greater productivity,enhanced security and, unassailable competitive edge.</p> */}
                             </div>
                         </div>
                         <div className="col-lg-6 or-1">

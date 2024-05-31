@@ -89,12 +89,13 @@ function Landing(){
                         </div> */}
                     </div>
                     <div className="about-left mb-3">
-                        <p>Our strategy is centered around understanding your business, your goals, and your audience. We believe that a successful digital presence is built on a solid foundation of research, planning, and execution. </p>
+                        <p>Our strategy is centered around understanding your business, your goals, and your audience. We believe that a successful digital presence is built on a solid foundation of research, planning, and execution.</p>
+                        <div class="buttons-group">
+                            <span>Learn More</span>
+                        </div>
                         {/* <p>From designing your overall digital strategy, to Digital Communication, to implementing game-changers like Cloud, AI, Mobility and Digital Engineering, we guide you through the jungle of digital possibilities with a structured and result-oriented approach.</p> */}
                     </div>
-                    <div class="read-btn">
-                        <Link to={"/about-us"}>Learn More</Link>
-                    </div>
+                    
                 </div>
                 <div className="col-lg-6 or-1 wow animate fadeIn" data-wow-delay="200ms" data-wow-duration="1500ms">
                     <div className="about-right">
