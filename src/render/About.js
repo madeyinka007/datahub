@@ -1,6 +1,6 @@
 import { PartnerCard, TeamCard } from "../components/swiper";
 
-export default function(){
+const About = function(){
     return (
         <>
             <section className="breadcrumbs">
@@ -106,3 +106,5 @@ export default function(){
         </>
     )
 }
+
+export default About

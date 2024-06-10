@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export function ProjectCard() {
     const [projects, setProjects] = useState(Projects)
-    const TabMenu = ['ui/ux', 'graphic', 'web', 'marketing']
+    const TabMenu = ['UI/UX', 'Software', 'Web Design', 'Marketing']
     const filtered = function(curr){
         const data = Projects.filter((item) => {
             return item.filter === curr

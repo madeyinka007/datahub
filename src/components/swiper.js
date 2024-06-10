@@ -66,8 +66,8 @@ export function PartnerCard(){
                         <span>Satisfied Client</span>
                         <h2>Our Partner</h2>
                         <div className="-partnerslider-navigator">
-                            <div className="swiper-button-prev-c" onClick={() => swiperRef.current?.slideNext()}><i className="bi bi-chevron-left"></i></div>
-                            <div className="swiper-button-next-c" onClick={() => swiperRef.current?.slidePrev()}><i className="bi bi-chevron-right"></i></div>
+                            <div className="swiper-button-prev-c" onClick={() => swiperRef.current?.slidePrev()}><i className="bi bi-chevron-left"></i></div>
+                            <div className="swiper-button-next-c" onClick={() => swiperRef.current?.slideNext()}><i className="bi bi-chevron-right"></i></div>
                         </div>
                     </div>
                 </div>
@@ -220,3 +220,57 @@ export function TeamCard(){
         </div>
     )
 }
+
+// export function ProjectSlider({type}){
+//     const swiperRef = useRef(null)
+//     return (
+//         <>
+//             <div class="project-slider">
+//                 <h4>Related Case Studies</h4>
+//                 <div class="arrow">
+//                     <div class="swiper-button-next-c" onClick={() => swiperRef.current?.slideNext()}><i class="bi bi-arrow-right"></i></div>
+//                     <div class="swiper-button-prev-c" onClick={() => swiperRef.current?.slidePrev()}><i class="bi bi-arrow-left"></i></div>
+//                 </div>
+//                 <div class="swiper project-slide">
+//                     <div class="swiper-wrapper">
+//                         <Swiper
+//                             modules={[Navigation, Pagination, A11y]}
+//                             onBeforeInit={(pswiper) => {
+//                                 swiperRef.current = pswiper
+//                             }}
+//                             loop={true}
+//                             slidesPerView={3}
+//                             spaceBetween={30}
+//                             breakpoints={{
+//                                 320:{slidesPerView:1, spaceBetween:0},
+//                                 576: {slidesPerView:2},
+//                                 992: {slidesPerView:3}
+//                             }}
+//                         >
+//                         {Projects.filter(i => i.filter == type).map((item, index) => {
+//                            return (
+//                             <SwiperSlide key={index}>
+//                                 <div class="swiper-slide">
+//                                     <div class="single-item">
+//                                         <div class="item-img">
+//                                             <a href="#"><img src="./../assets/img/project/project-1.jpg" alt="website-1" /></a>
+//                                         </div>
+//                                         <div class="item-inner-cnt">
+//                                             <span>{item.type}</span>
+//                                             <h4>{item.name}</h4>
+//                                             <div class="view-btn">
+//                                                 <a href="#">view details</a>
+//                                             </div>
+//                                         </div>
+//                                     </div> 
+//                                 </div>
+//                             </SwiperSlide>
+//                            ) 
+//                         })}
+//                         </Swiper>
+//                     </div>
+//                 </div>
+//             </div>
+//         </>
+//     )
+// }

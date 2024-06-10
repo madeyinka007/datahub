@@ -2,6 +2,7 @@ import { useReducer } from "react"
 import { AgentReducer, agent_initial } from "../reducer"
 import { ACTION_TYPES } from "../types"
 import { postData } from "../services"
+import { Link } from "react-router-dom"
 
 export default function Referral(){
     const [state, dispatch] = useReducer(AgentReducer, agent_initial)
@@ -36,9 +37,9 @@ export default function Referral(){
                             <div className="breadcrumb-wrapper">
                                 <div className="breadcrumb-cnt">
                                     <h1>Referral</h1>
-                                    <span><a href="/">Home</a><i className="bi bi-arrow-right"></i>Referral</span>
+                                    <span><Link to="/">Home</Link><i className="bi bi-arrow-right"></i>Referral</span>
                                     <div className="breadcrumb-video">
-                                        <img src="assets/img/breadcrumb-video.jpg" alt="breadcrumb" />
+                                        <img src="./../assets/img/breadcrumb-video.jpg" alt="breadcrumb" />
                                         <div className="video-inner">
                                             <a className="video-popup" href="https://www.youtube.com/watch?v=0O2aH4XLbto"><i className="fas fa-play"></i></a>
                                         </div>

@@ -60,7 +60,7 @@ function Landing(){
                 <div className="sec-title">
                     <span>{t('Offering')}</span>
                     <h2>Services</h2>
-                    <p>Our comprehensive range of services is designed to meet the diverse needs of businesses in the digital age. From stunning website designs to strategic marketing campaigns, we are your trusted partner in achieving online success.</p>
+                    <p>Our comprehensive range of services is designed to meet the diverse needs of businesses in this digital era.</p>
                     {/* <p>We are a full stack software development agency that can help your business from branding through marketing through development to launch.</p> */}
                 </div>
             </div>

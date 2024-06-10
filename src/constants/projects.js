@@ -2,7 +2,7 @@ export const Projects = [
     {
         name:"Desktop Mockup",
         slug:"desktop-mockup",
-        filter:'ui/ux',
+        filter:'Web Design',
         type:"Software",
         thumb:"project-1.jpg",
         image:""
@@ -11,15 +11,15 @@ export const Projects = [
 
         name:"Creative Agency",
         slug:"creative-agency",
-        filter:"web",
-        type:"Template",
+        filter:"Marketing",
+        type:"Marketing",
         thumb:"project-2.jpg",
         image:""
     },
     {
         name:"Mobile Crypto Wallet",
         slug:"mobile-crypto-wallet",
-        filter:"marketing",
+        filter:"Marketing",
         type:"App",
         thumb:"project-3.jpg",
         image:""
@@ -27,7 +27,7 @@ export const Projects = [
     {
         name:"E-Shop Ecommerce",
         slug:"e-shop-ecommerce",
-        filter:"graphic",
+        filter:"Web Design",
         type:"UI Kit",
         thumb:"project-4.jpg",
         image:""
@@ -35,7 +35,7 @@ export const Projects = [
     {
         name:"Art Deco Cocktails",
         slug:"art-deco-cocktails",
-        filter:"graphic",
+        filter:"UI/UX",
         type:"Graphic",
         thumb:"project-5.jpg",
         image:""
@@ -43,7 +43,7 @@ export const Projects = [
     {
         name:"Low poly Base mesh",
         slug:"low-poly-base-mesh",
-        filter:"web",
+        filter:"Software",
         type:"3D Design",
         thumb:"project-6.jpg",
         image:""
