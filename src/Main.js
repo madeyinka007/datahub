@@ -12,12 +12,14 @@ import Services from './render/Services';
 import Service from './render/Service';
 import Projects from './render/Projects';
 import Project from './render/Project';
+import ScrollTop from './render/ScrollTop';
 
 function App() {
   return (
     <>
       <ThemeProvider>
         <Suspense fallback={<h1>LOADING...</h1>}>
+          <ScrollTop />
             <Header />
             <main className="creasoft-wrap">
               <div className="line_wrap">
